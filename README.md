@@ -60,8 +60,8 @@ Market data is downloaded on first notebook run and cached to `data/` (never com
 
 This repository is one of three companion projects sharing the `common/` library and the same IS/OOS discipline:
 
-1. **Multi-Period Portfolio Optimization** — CVXPY, exact cost-model contract, the restraint result
-2. **Eigenportfolios via Random Matrix Theory** — Marchenko-Pastur denoising, the five-probe tie
-3. **HMM Regime Detection** — causal filtering, the detector/strategy split
+1. [**Multi-Period Portfolio Optimization**](https://github.com/DR1PD/multi-period-portfolio-optimization) — CVXPY, exact cost-model contract, the restraint result
+2. [**Eigenportfolios via Random Matrix Theory**](https://github.com/DR1PD/eigenportfolios-rmt) — Marchenko-Pastur denoising, the five-probe tie
+3. [**HMM Regime Detection**](https://github.com/DR1PD/hmm-regime-detection) — causal filtering, the detector/strategy split
 
 *Author: David Colindres — M.S. Industrial & Systems Engineering + M.A. Econometrics, University of Oklahoma.*
