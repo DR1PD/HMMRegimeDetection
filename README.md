@@ -55,13 +55,3 @@ pytest
 ```
 
 Market data is downloaded on first notebook run and cached to `data/` (never committed).
-
-## Part of a three-project research program
-
-This repository is one of three companion projects sharing the `common/` library and the same IS/OOS discipline:
-
-1. [**Multi-Period Portfolio Optimization**](https://github.com/DR1PD/MultiPeriodPortfolioOptimization) — CVXPY, exact cost-model contract, the restraint result
-2. [**Eigenportfolios via Random Matrix Theory**](https://github.com/DR1PD/EigenportfoliosRMT) — Marchenko-Pastur denoising, the five-probe tie
-3. [**HMM Regime Detection**](https://github.com/DR1PD/HMMRegimeDetection) — causal filtering, the detector/strategy split
-
-*Author: David Colindres — M.S. Industrial & Systems Engineering + M.A. Econometrics, University of Oklahoma.*
