@@ -16,7 +16,7 @@ refits with window-local scaling and causal winsorization (delete-the-future
 invariance machine-checked), 2000–2024. IS through 2017 / OOS 2018–2024.
 Code: [`src/hmmlab/`](projects/03_hmm_regimes/src/hmmlab/).
 
-## Conclusion
+## Results
 
 **The HMM proved an excellent detector and a weak strategy, with a regime
 count Gaussian emissions cannot resolve.** As measurement, the HMM works:
