@@ -38,7 +38,7 @@ jupyter nbconvert --to notebook --execute --inplace projects/03_hmm_regimes/note
 
 ---
 
-## Repository layout
+## Layout
 
 - [`projects/03_hmm_regimes/`](./projects/03_hmm_regimes/) — the project: [`notebooks/exploration.ipynb`](./projects/03_hmm_regimes/notebooks/exploration.ipynb) (the full narrative analysis, committed with outputs), `src/` (the extracted package), `config.yaml` (all parameters, schema-validated), `DESIGN.md` (the pre-registered spec), per-module tests.
 - [`common/`](./common/) — shared library (data loading, metrics, causal HMM filter, plotting theme) used across the research program.
@@ -56,10 +56,12 @@ pytest
 
 Market data is downloaded on first notebook run and cached to `data/` (never committed).
 
-## Authorship & tooling
+## Authorship
 
 This project was built with AI-assisted development (Claude Code). All methodology,
 parameter choices, and research decisions are mine; every number-moving change has a
 paper trail in [`results/CHANGELOG.md`](results/CHANGELOG.md), and every core result
 is pinned by the test suite (`pytest` from the repo root). I can defend any line of
-this code — that is the standard the whole repository is written to.
+this code, and that is the standard the whole repository is written to.
+
+*by David Colindres*
