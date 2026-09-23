@@ -1,16 +1,22 @@
 # HMM Regime Detection with Walk-Forward Allocation
 
-**Hypothesis.** A Gaussian HMM on (return, realized vol, ΔVIX) can detect
+## Hypothesis
+
+A Gaussian HMM on (return, realized vol, ΔVIX) can detect
 market regimes early enough for a defensive-switching strategy to beat
 buy-and-hold, and its regime-conditional vols should forecast volatility
 better than causal benchmarks.
 
-**Methodology.** hmmlearn EM with a hand-rolled, validated causal forward pass
+## Methodology
+
+hmmlearn EM with a hand-rolled, validated causal forward pass
 ([`common/hmm_filter.py`](common/hmm_filter.py) — exact hmmlearn
 agreement at t = T; full Baum-Welch is the Phase 4 build), walk-forward
 refits with window-local scaling and causal winsorization (delete-the-future
 invariance machine-checked), 2000–2024. IS through 2017 / OOS 2018–2024.
 Code: [`src/hmmlab/`](projects/03_hmm_regimes/src/hmmlab/).
+
+## Conclusion
 
 **The HMM proved an excellent detector and a weak strategy, with a regime
 count Gaussian emissions cannot resolve.** As measurement, the HMM works:
@@ -63,5 +69,3 @@ parameter choices, and research decisions are mine; every number-moving change h
 paper trail in [`results/CHANGELOG.md`](results/CHANGELOG.md), and every core result
 is pinned by the test suite (`pytest` from the repo root). I can defend any line of
 this code, and that is the standard the whole repository is written to.
-
-*by David Colindres*
