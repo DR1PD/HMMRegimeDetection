@@ -1,0 +1,35 @@
+[project]
+name = "hmm-regime-detection"
+version = "0.1.0"
+description = "Gaussian HMM regime detection with a hand-rolled causal filter and walk-forward allocation"
+requires-python = ">=3.11"
+dependencies = [
+    "numpy>=1.26",
+    "pandas>=2.1",
+    "scipy>=1.11",
+    "matplotlib>=3.8",
+    "seaborn>=0.13",
+    "statsmodels>=0.14",
+    "scikit-learn>=1.3",
+    "cvxpy>=1.4",
+    "ecos>=2.0",  # cvxpy >=1.6 no longer bundles ECOS; notebooks call it explicitly
+    "yfinance>=0.2.40",
+    "hmmlearn>=0.3",
+    "pandas-datareader>=0.10",
+    "arch>=6.3",
+    "pyarrow>=14.0",
+    "pyyaml>=6.0",  # config.yaml loading (common/config.py)
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.4", "pytest-cov", "ruff", "jupyter", "nbconvert"]
+
+[tool.pytest.ini_options]
+testpaths = ["projects", "tests"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["common*"]

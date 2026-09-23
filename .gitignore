@@ -1,0 +1,15 @@
+# Data is downloaded, never committed
+data/
+*.parquet
+
+# Committed on purpose: results/figures and results/tables (READMEs embed them).
+# Only logs and bulky intermediates are ignored.
+results/logs/
+results/cache/
+
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+*.egg-info/
+.DS_Store

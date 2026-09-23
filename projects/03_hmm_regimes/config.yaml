@@ -1,0 +1,29 @@
+# Generated from the notebook's CONFIG dict (ROADMAP 2.3) — do not
+# hand-edit values without rerunning and re-baselining (results/CHANGELOG.md).
+start_date: '2000-01-01'
+end_date: '2024-12-31'
+is_end: '2017-12-31'
+oos_start: '2018-01-01'
+vol_window: 21
+corr_window: 63
+n_regimes_test:  # extended in 3.2 so corrected BIC can find an interior minimum
+- 2
+- 3
+- 4
+- 5
+- 6
+- 7
+- 8
+- 9
+- 10
+- 11
+- 12
+n_em_restarts: 10
+em_max_iter: 200
+em_tol: 0.0001
+rebal_frequency: 21
+lookback_hmm: 1500
+equity_ticker: SPY
+bond_ticker: TLT
+c_prop: 0.0005
+var_confidence: 0.95
